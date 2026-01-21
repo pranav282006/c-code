@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+void main(){
+    int size;
+    printf("Enter arrray size:\n");
+    scanf("%d",&size);
+    int arr[size];
+    int evencount=0;
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr[i]);
+        if(arr[i]%2==0){
+            printf("%d is even\n",arr[i]);
+            evencount++;
+        }else{
+            printf("%d is odd\n",arr[i]);
+        }
+    }
+    printf("Even:%d\n",evencount);
+    printf("Odd:%d\n",size-evencount);
+}
