@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main(){
+    int noofsub;
+    int total=0;
+    printf("Enter no of subject:\n");
+    scanf("%d",&noofsub);
+    int marks[noofsub];
+    for(int i=0;i<noofsub;i++){
+        scanf("%d",&marks[i]);
+    }
+    for(int i=0;i<noofsub;i++){
+        total=total+marks[i];
+    }
+    float percentage;
+    percentage=total/noofsub;
+    printf("%f",percentage);
+}
+
+
