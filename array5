@@ -1,0 +1,8 @@
+#include<stdio.h>
+void main(){
+    int size;
+    printf("Enter size of array:\n");
+    scanf("%d",&size);
+    int arr[size];
+    printf("%d\n",sizeof(arr));
+}
