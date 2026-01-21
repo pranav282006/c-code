@@ -1,0 +1,28 @@
+ #include<stdio.h>
+ void main(){
+    int size;
+    printf("Enter size of array:\n");
+    scanf("%d",&size);
+    char arr[size];
+    getchar();
+    for(int i=0;i<size;i++){
+        scanf("%c",&arr[i]);
+        getchar();
+    }
+    printf("----printing vowels if present in array----\n");
+    int count=0;
+    for(int i=0;i<size;i++){
+        if(arr[i] == 'A' || arr[i] == 'E' || arr[i] == 'I' ||
+           arr[i] == 'O' || arr[i] == 'U' ||
+           arr[i] == 'i' || arr[i] == 'a' || arr[i] == 'e' ||
+           arr[i] == 'o' || arr[i] == 'u'){
+            printf("%c\n",arr[i]);
+            count++;
+         }else{
+            printf("|No|");
+         }
+    
+        }
+    printf("count:%d\n",count);
+    printf("\n");
+}
