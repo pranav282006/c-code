@@ -1,0 +1,23 @@
+#include <stdio.h>
+void main(){
+    int size;
+    printf("Enter size array:\n");
+    scanf("%d",&size);
+    char arr[size];
+    getchar();
+    printf("Enter element in array:\n");
+    for(int i=0;i<size;i++){
+        scanf(" %c", &arr[i]);  // space before %c is important
+    }
+    getchar();
+    for(int i=0;i<size;i++){
+        if(arr[i] == 'A' || arr[i] == 'E' || arr[i] == 'I' ||
+           arr[i] == 'O' || arr[i] == 'U' ||
+           arr[i] == 'a' || arr[i] == 'e' || arr[i] == 'i' ||
+           arr[i] == 'o' || arr[i] == 'u'){
+            printf("Vowel: %c\n",arr[i]);
+            printf("Index: %d\n",i);
+           }
+    }
+}
+
