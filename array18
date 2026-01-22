@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main(){
+    int size;
+    printf("Enter size of array:\n");
+    scanf("%d",&size);
+    if(size>=1){
+        int arr1[size];
+        printf("Enter array element:\n");
+        for(int i=0;i<size;i++){
+            scanf("%d",&arr1[i]);
+        }
+        printf("\n");
+        printf("\n");
+        int arr2[size];
+        for(int i=0;i<size;i++){
+            arr2[size-1-i]=arr1[i];
+        }
+        printf("\n");
+        printf("\n");
+        for(int i=0;i<size;i++){
+            printf("%d\n",arr2[i]);
+        }
+        printf("\n");
+    }else{
+        printf("Invalid size given for array\n Re enter size\n");
+    }
+}
