@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main(){
+   int size1;
+    printf("Enter size of array:\n");
+    scanf("%d",&size1);
+    int arr1[size1];
+    printf("Enter element in array:\n");
+    for(int i=0;i<size1;i++){
+        scanf("%d",&arr1[i]);
+    }
+    int size2;
+    printf("Enter size of array:\n");
+    scanf("%d",&size2);
+    int arr2[size2];
+    printf("Enter element in array:\n");
+    for(int i=0;i<size2;i++){
+        scanf("%d",&arr2[i]);
+    }
+    if(sizeof(arr1)==sizeof(arr2)){
+        printf("Array element are:\n");
+        for(int i=0;i<size1;i++){
+            if(i%2==0){
+                printf("%d\n%d\n",arr1[i],arr2[i]);
+            }else{
+                printf("%d\n%d\n",arr1[i],arr2[i]);
+            }
+        }
+    }else{
+        printf("Array size are not equal\nRe enter size\n");
+    }
+}
+
