@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main(){
+    int size;
+    printf("Enter size of array:\n");
+    scanf("%d",&size);
+    int arr1[size];
+    int sum1=0;
+    printf("Enter element in array:\n");
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr1[i]);
+        sum1=sum1+arr1[i];
+    }
+    int arr2[size];
+    int sum2=0;
+    printf("Enter element in array:\n");
+    for(int i=0;i<size;i++){
+        scanf("%d",&arr2[i]);
+        sum2=sum2+arr2[i];
+    }
+    if(sum1==sum2){
+        printf("sum is equal\n");
+    }else{
+        printf("sum is not equal\n");
+    }
+}
