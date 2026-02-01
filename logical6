@@ -1,0 +1,9 @@
+#include<stdio.h>
+void main(){
+    int x=10;
+    int y=20;
+    int z=30;
+    int ans=0;
+    ans =x++||--y&&++z;
+    printf("%d %d %d",x,y,z,ans);
+}
