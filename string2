@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main(){
+    char *name1="pranav";
+    printf("%ld\n",sizeof(name1));
+    printf("%s\n",name1);
+    printf("%ld\n",strlen(name1));
+    char name2[20]="pranav";
+    printf("%ld\n",sizeof(name2));
+    printf("%s\n",name2);
+    printf("%ld\n",strlen(name2));
+}
