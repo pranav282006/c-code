@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(){
+    char name[]={'p','r','a','n','a','v','\0'};
+    printf("%s\n",name);
+    printf("%ld\n",sizeof(name));
+    printf("%p\n",name);
+    char name2[]="pranav";
+    printf("%s\n",name2);
+    printf("%ld\n",sizeof(name2));
+    printf("%p\n",name2);
+    char name3[]="kanha";
+    printf("%s\n",name3);
+    printf("%ld\n",sizeof(name3));
+    printf("%p\n",name3);
+}
