@@ -1,0 +1,7 @@
+#include<stdio.h>
+void main(){
+    char name[6]="pranav";
+    printf("%s\n",name);
+    char name2[5]="kanha";
+    printf("%s\n",name2);
+}
