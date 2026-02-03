@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main(){
+    char name[20];
+    char ch;
+    int index=0;
+    while(ch=getchar()!='\n'){
+        name[index]=ch;
+        index++;
+    }
+    name[index]='\0';
+    printf("%s\n",name);
+}
