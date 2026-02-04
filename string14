@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+long mystrlen(char str[]){
+    return 10;
+}
+void main(){
+    char*str="kanha";
+    printf("%ld\n",mystrlen(str));
+    printf("%ld\n",strlen(str));
+}
