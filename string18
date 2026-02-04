@@ -1,0 +1,18 @@
+#include<stdio.h>
+void mystrcpy(char dest[],char src[]){
+    int index=0;
+    while(src[index]!='\0'){
+        dest[index]=src[index];
+        index++;
+    }
+    dest [index]='\0';
+    printf("%S\n",src);
+    printf("%s\n",dest);
+}
+void main(){
+    char str1[]="pranav";
+    char str2[20];
+    printf("%S\n",str1);
+    printf("%s\n",str2);
+    mystrcpy(str2,str1);
+}
