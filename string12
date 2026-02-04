@@ -1,0 +1,12 @@
+#include<stdio.h>
+void main(){
+    char*str1="kanha";
+    char*str2="kanha";
+    char str3[]={'r','a','m'};
+    char str4[]={'r','a','m'};
+    printf("%s\n",str1);
+    printf("%s\n",str2);
+    *(str2+0)='r';
+    printf("%s\n",str1);
+    printf("%s\n",str2);
+}
