@@ -1,0 +1,12 @@
+#include<stdio.h>
+int fun(){
+    static int x=20;
+    x++;
+    return x;
+}
+void main(){
+    fun();
+    fun();
+    int retval=fun();
+    printf("%d\n",retval);
+}
