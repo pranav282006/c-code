@@ -1,0 +1,11 @@
+#include<stdio.h>
+void fun();
+int x=20;
+void main(){
+    auto int x=10;
+    printf("%d\n",x);
+    fun();
+}
+void fun(){
+    printf("%d\n",x);
+}
